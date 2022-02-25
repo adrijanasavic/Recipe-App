@@ -1,38 +1,98 @@
-.App {
-  text-align: center;
+.search-box {
+    background-image: linear-gradient(180deg, #2af598 0%, #009efd 100%);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.search-form {
+    min-height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.search-bar {
+    min-height: 3vh;
+    display: flex;
+    padding: 15px;
+    border: none;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 16px;
+    margin-right: 10px;
+    box-shadow: 0px 5px rgba(12, 8, 235, 0.1);
+    color: #313131;
+    font-size: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.serach-bar {
+    width: 50%;
+    border: none;
+    padding: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.search-button {
+    background: #009efd;
+    border: none;
+    padding: 10px 20px;
+    color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.recipes {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.button-75 {
+    align-items: center;
+    background-image: linear-gradient(135deg, #f2f52a 40%, #216996);
+    border: 0;
+    border-radius: 10px;
+    box-sizing: border-box;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    font-family: "Codec cold", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    height: 54px;
+    justify-content: center;
+    letter-spacing: .4px;
+    line-height: 1;
+    max-width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 3px;
+    text-decoration: none;
+    text-transform: uppercase;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.button-75:active {
+    outline: 0;
+}
+
+.button-75:hover {
+    outline: 0;
+}
+
+.button-75 span {
+    transition: all 200ms;
+}
+
+.button-75:hover span {
+    transform: scale(.9);
+    opacity: .75;
+}
+
+@media screen and (max-width: 991px) {
+    .button-75 {
+        font-size: 15px;
+        height: 50px;
+    }
+    .button-75 span {
+        line-height: 50px;
+    }
 }
